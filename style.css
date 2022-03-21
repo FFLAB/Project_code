@@ -1,0 +1,530 @@
+/*-----
+Reset
+------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #81CFEE;
+
+}
+
+/*-----
+Header
+------*/
+header{
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(24, 52, 209);
+
+}
+
+
+
+/*-----
+NAV
+------*/
+.container{
+
+    width: 1280px;
+    margin: auto;
+
+}
+
+
+.nav_checkbox{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+
+.logo img{
+    height:  80px;
+    width: 80px;
+    padding-left: 10px;
+
+}
+
+.tab-nav{
+
+    outline: none;
+    display: none;
+
+}
+
+.label{
+
+    display: none;
+    color: white;
+
+}
+
+.burger{
+
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px;
+
+}
+
+.content_nav{
+    
+    grid-column: 3;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.content_nav li{
+
+    display: inline-block;
+    padding-right: 10px;
+
+}
+
+.content_nav li a{
+
+    text-decoration: none;
+    color: white;
+    position: relative;
+
+}
+
+.content_nav li a::after{
+
+    content:'';
+    display: block;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform-origin: right;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 0.5s;
+
+}
+
+.content_nav li a:hover::after{
+
+    transform: scale(1, 1);
+
+}
+
+.content_section{
+
+    height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+
+}
+
+/*-----
+FINE NAV
+------*/
+
+
+
+/*-----
+ASIDE
+------*/
+#banner{
+    width: 100%;
+    background: url(img/sfondo.jpg) no-repeat center center;
+    background-size: cover;
+    height: 800px;
+    padding:20px;
+    display: flex;
+    align-items: flex-start;
+    color: #ffffff;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: center;
+    
+
+  
+}
+.item{
+          
+    text-shadow: 2px 2px 3px #2d2d2d;
+    font: 50px;
+}
+
+h1 {font-size: 150px;}
+
+/* -------------- Bottone Guarda Video----------------- */
+.button{   
+    display: inline-block;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    border-radius: 30px;
+    padding: 15px 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.button:hover{
+    background: #fff;
+    color: blue;
+    transition: all ease 0.5s;
+}
+/* -----------Fine Bottone Guarda Video */
+
+/* ------ FOOTER -------------------*/
+
+footer{
+    background: #444;
+    padding: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+footer p{
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 200;
+    padding: 30px;
+}
+footer hr{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    align-items: center;
+
+
+}
+footer p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.social{
+    width: 800px;  /* Spazio fra i social */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fa-linkedin-in{
+    margin-top: 6px;
+}
+.fa-facebook-f{
+    font-size: 34px;
+}
+.social a{
+    font-size: 35px;
+    color: #fff;
+}
+.social a:hover{
+    opacity: 0.6;
+}
+
+
+.powered{
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+}
+.powered p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+/* ------ Fine FOOTER */
+
+
+
+
+/* ---------------------PAGINA ABOUT----------------------- */
+.grid_1 {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.about {
+   margin-top: 300px;
+   padding: 15px;
+}
+.about h1 {
+    font-size: 40px;
+    text-align: center;
+    color: red;
+}
+
+.about h2 {
+    font-size: 20px;
+    text-align:center;
+    color: #2d2d2d;
+}
+
+.about p {
+    font-size: 25px;
+    color: #000;
+    text-align: justify;
+}
+
+main {
+    margin-top: 130px;
+}
+
+
+/* -------------------- Pagina Video */
+
+aside .about {
+    display: grid;
+    justify-items: center;
+}
+
+
+
+/* ----------PAGINA PRODOTTI----------------- */
+
+
+
+
+.grid{
+ /*    margin: 80px; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    align-items:stretch;
+    
+}
+
+.grid > article {
+    background: #fff;
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    border-radius: 50px;
+    text-align: center;
+    width: 95%;
+    transition: transform 0.3s;
+    
+
+}
+
+.grid > article:hover {
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+}
+
+.grid > article {
+width: 80%;
+height: 95%;
+border-top-left-radius: 60px;
+border-top-right-radius: 60px;
+
+}
+
+.text{
+    padding: 0px 30px 30px;
+}
+
+.text p{
+    color: #000;
+    padding: 10px;
+}
+
+
+.text h3 {
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight:bold;
+    color: #555;
+}
+
+
+
+
+.rating .fa-solid, .fa-regular{
+    color: #ff523b;
+    font-size: 25px;
+}
+
+/* ----------------- PAGINA TINIKLING ---------------- */
+
+.grid4 {
+    display: grid;
+    grid-template-columns: 8% 30% 15% auto;
+    grid-template-rows: 90px auto auto 95px;
+}
+
+.title {
+    grid-column: 2/4;
+    grid-row: 2;
+    z-index: 1;
+
+}
+
+.paragraph {
+    grid-column: 2/4;
+    grid-row: 3;
+    z-index: 1;
+}
+
+.image {
+    grid-column: 3/5;
+    grid-row: 1/5 ;
+}
+
+
+
+.grid4 h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: red;
+}
+
+.grid4 p { 
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 30px 30px 30px 30px;
+}
+
+.grid4 img {
+    display: block;
+    box-shadow: 0 12px 50px rgba(0,0,0,.4);
+}
+
+.danza {
+    background-color: rgba(0, 0, 0, 0.5);
+  
+}
+
+
+
+
+
+/*-----
+SMARTPHONE
+------*/
+@media screen and (max-width: 1230px){
+
+    .container{
+
+        width: 100%;
+    }
+   aside {
+      
+    width: 100%;
+
+    }
+
+    footer{
+       
+        width: 100%;
+    }
+
+    .grid4 {
+        display: block;   /* GRID DI PAGINA TINIKLING */
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    
+
+    .label{
+
+        display: grid;
+        cursor: pointer;
+        grid-column: 3;
+        padding-right: 10px;
+
+    }
+
+    .content_nav{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/4;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.6s;
+
+    }
+
+    .nav_checkbox input:checked ~ .content_nav{
+
+        max-height: 500px;
+
+    }
+
+    .content_nav li{
+
+        padding: 15px 0px;
+
+    }
+
+    aside{
+        width: 100%x;
+        
+        }
+        
+    footer {
+        width: 100%;
+       
+    }
+
+    .grid {
+        grid-template-columns: repeat(2,1fr);
+        }
+
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+        .grid  {
+            grid-template-columns: repeat(1,1fr);
+        }
+    
+    .grid > article {
+        text-align: center;
+        justify-items: right;
+        }
+
+        aside{
+            width: 100%;
+
+        }
+ }
