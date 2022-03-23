@@ -15,10 +15,16 @@ Reset
 
 body{
     color: white;
-    box-sizing: border-box;
+    /* box-sizing: border-box;  è gia nel reset*/
     font-family: 'Montserrat', Arial, sans-serif;
     background-color: #81CFEE;
 
+}
+
+/* Immagini responsive */
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 /*-----
@@ -39,12 +45,14 @@ header{
 /*-----
 NAV
 ------*/
-.container{
+
+/* non serve */
+/* .container{
 
     width: 1280px;
     margin: auto;
 
-}
+} */
 
 
 .nav_checkbox{
@@ -155,11 +163,18 @@ FINE NAV
 ASIDE
 ------*/
 #banner{
-    width: 100%;
-    background: url(img/sfondo.jpg) no-repeat center center;
-    background-size: cover;
-    height: 800px;
-    padding:20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    background-color: #72dffe;
+    height: 500px;
+}
+.colban1{
+    /* width: 100%; */
+    /* background: url(img/sfondo.jpg) no-repeat center center; */
+    /* background-size: cover; */
+    /* height: 800px; */
+    padding:60px 20px;
     display: flex;
     align-items: flex-start;
     color: #ffffff;
@@ -167,8 +182,12 @@ ASIDE
     align-content: flex-end;
     justify-content: center;
     
-
   
+}
+.colban2{
+    background: url(img/sfondo-giochi.jpg) no-repeat center center;
+    background-size: cover;
+
 }
 .item{
           
@@ -176,7 +195,8 @@ ASIDE
     font: 50px;
 }
 
-h1 {font-size: 150px;}
+/* h1 {font-size: 150px;} */
+h1.item {font-size: 70px;} /* non a TUTTI gli H1 del sito */
 
 /* -------------- Bottone Guarda Video----------------- */
 .button{   
@@ -203,7 +223,7 @@ h1 {font-size: 150px;}
 
 footer{
     background: #444;
-    padding: 50px;
+    padding: 30px 50px;
     display: flex;
     justify-content: flex-end;
     align-content: center;
@@ -212,14 +232,18 @@ footer{
 }
 
 footer p{
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     font-size: 13px;
     color: #fff;
     font-weight: 200;
     padding: 30px;
 }
-footer hr{
+
+/* dare impostazioni grid a un HR??? no no no 
+questo sfasciava completamente il sito
+*/
+/* footer hr{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -227,14 +251,16 @@ footer hr{
     align-items: center;
 
 
-}
+} */
 footer p a{
     color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 .social{
-    width: 800px;  /* Spazio fra i social */
+    /* Spazio fra i social */
+    /* width: 800px;   */
+    width: 60vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -437,7 +463,7 @@ SMARTPHONE
 ------*/
 @media screen and (max-width: 1230px){
 
-    .container{
+    /* .container{
 
         width: 100%;
     }
@@ -450,14 +476,16 @@ SMARTPHONE
     footer{
        
         width: 100%;
-    }
+    }  */
 
-    .grid4 {
-        display: block;   /* GRID DI PAGINA TINIKLING */
+    /* GRID DI PAGINA TINIKLING */
+
+   .grid4 {
+        display: block;   
     }
 }
 
-@media screen and (max-width: 767px){
+ @media screen and (max-width: 767px){
 
     
 
@@ -510,10 +538,10 @@ SMARTPHONE
 
 
 
-}
+} 
 
 
-@media screen and (max-width: 500px) {
+ @media screen and (max-width: 700px) {
         .grid  {
             grid-template-columns: repeat(1,1fr);
         }
@@ -527,4 +555,23 @@ SMARTPHONE
             width: 100%;
 
         }
- }
+        
+        /* FFRA */
+        
+
+        #banner{
+            grid-template-columns: 1fr;
+            height: auto;
+        }
+
+ } 
+
+ /* ADDED by FFRA */
+
+ /* color class 3 e 4 */
+ .black{color: #000;}
+ .brown{color: brown;}
+
+ /* 5 F**k the BR! */
+ .mb-50{margin-bottom: 50px;}
+

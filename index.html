@@ -7,13 +7,17 @@
     <meta name="author" content="John Marco Tolentino">
     <meta name="description" content="Il Sito Ufficiale di 'Joruan', giochi di tradizione filippina">
     <meta name="keywords" content=" giochi, filippine, tradizione, nostalgia, laruan, analogico">
+    <!-- ***************************
+        FORKED EDITED VERSION by FFRA 
+        *****************************
+    -->
      
-     <!-- FontAwesome  -->
+     <!-- FontAwesome - 1.caricato in tre modi diversi, ne basta uno! -->
      <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
          <script src="https://kit.fontawesome.com/998beec9be.js" crossorigin="anonymous"></script>
 
-    <!-- Google Font-->
+    <!-- Google Font 2. un po' tanti i pesi caricati, li usi veramente tutti? -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,800" rel="stylesheet">
     
     <!-- Icona -->
@@ -45,14 +49,33 @@
         </div>
     </header>
 <!--------------------------->
-    <aside id="banner"><h1 class="item">JORUAN </h1><br>
-        <h2>Quando la <font color="black">TRADIZIONE</font color> abbraccia il  <font color="black">PRESENTE </font color>.</h2>
-            <br>
-            <br>
-            <br>
-  
-      
-        <a href="video.html" class="button">Guarda Video   &nbsp;&nbsp;&nbsp; <span class="fas fa-play" ></span></a>
+     <aside id="banner">
+        <div class="colban1">
+           
+                <!-- ho creato una griglia a due colonne, immagine IMG a destra, stesso colore -->
+            
+                    <h1 class="item">JORUAN </h1>
+                <!-- <br> -->
+                <!-- 3. stile HTML NUOOOOOO! :D usare SPAN
+                    4. troppo diversi i colori, meglio un colore che richiami la foto a fianco (vedi style.css mie classi in fondo)
+                    <h2>Quando la <font color="black">TRADIZIONE</font color> abbraccia il  <font color="black">PRESENTE </font color>.</h2> -->
+                <h2 class="brown mb-50">Quando la <span class="black">TRADIZIONE </span> abbraccia il  <span class="black"> PRESENTE </span>.</h2>
+                    <!-- 
+                        5. DEPRECATISSIMO usare i br per creare spazio. In un test di assunzione può essere un errore da bocciatura, si deve saper usare
+                        gli spazi con MARGIN e PADDING (anche qui vedi mie classi)
+                        
+                    <br>
+                    <br>
+                    <br> -->
+        
+            
+                <a href="video.html" class="button">Guarda Video   &nbsp;&nbsp;&nbsp; <span class="fas fa-play" ></span></a>
+
+        </div>
+        <div class="colban2">
+            <!-- <img src="img/sfondo-giochi.jpg" alt=""> -->
+        </div>
+        
     </aside>
 <!---------------------------->
                
